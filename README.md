@@ -35,4 +35,10 @@ This will return <pre>"SELECT `column1` FROM `myTable` LIMIT 2, 10"</pre>
 E.g. <pre>sqlHelper::select('myTable', ['column1'], ['column2'=>'value2', 'column3'=>'value3'], "10, 5");</pre>
 This will return <pre>"SELECT `column1` FROM `myTable` WHERE `column2`='value2' AND `column3`='value3' LIMIT 10, 5"</pre>
 
-<h4>Update and delete documentation comming soon ...</h4>
+<h3>To Update Row</h3>
+Use <code>sqlHelper::update($table, $data, $where);</code>
+
+E.g. <pre>sqlHelper::update('myTable', ['column2'=>'value2', 'column3'=>'value3'], ['column1'=>'value1']);</pre>
+This will return <pre>"UPDATE `myTable` SET `column2`='value2', `column3`='value3' WHERE `column1`='value1'"</pre>
+
+<h4>Delete documentation comming soon ...</h4>
