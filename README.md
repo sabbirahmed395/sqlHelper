@@ -1,5 +1,4 @@
 # sqlHelper
-sql helper function
 This helper class returns sql string only, we need to specify the table name and data array to get sql string
 
 <h3>To Insert a row into table</h3>
