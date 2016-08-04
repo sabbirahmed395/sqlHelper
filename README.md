@@ -41,4 +41,10 @@ Use <code>sqlHelper::update($table, $data, $where);</code>
 E.g. <pre>sqlHelper::update('myTable', ['column2'=>'value2', 'column3'=>'value3'], ['column1'=>'value1']);</pre>
 This will return <pre>"UPDATE `myTable` SET `column2`='value2', `column3`='value3' WHERE `column1`='value1'"</pre>
 
-<h4>Delete documentation comming soon ...</h4>
+<h3>To Delete Row</h3>
+Use <code>sqlHelper::delete($table, $where, $limit);</code>
+<code>$limit</code> is optional here. Default <code>$limit</code> is 1
+
+E.g. <pre>sqlHelper::delete('myTable', ['column1'=>'value1']);</pre>
+This will return <pre>"DELETE FROM `myTable` WHERE `column1`='value1' LIMIT 1"</pre>
+
